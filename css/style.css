@@ -1,0 +1,98 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@font-face{
+    font-family:Abril;
+    src: url(../fonts/Abril.otf);
+}
+@font-face{
+    font-family:Muli;
+    src: url(../fonts/Muli.ttf);
+}
+body{
+    width: 100%;
+    font-family: "Muli", sans-serif;
+    background-color: bisque;
+    background-image: url(../img/papel.jpg);
+}
+
+.container{
+    width: 80%;
+    max-width: 1000px;
+    margin: 0 auto;
+    
+}
+h1{
+    text-align: center;
+    padding: 0.5em;
+    color: darkred;
+    font-family: "Abril", sans-serif;
+}
+h2{
+    padding: 0.5em;
+    color: darkred;
+    font-family: "Abril", sans-serif;
+}
+.datoslibro{
+    width: 24%;
+    display: inline-block;    
+    vertical-align: top;
+        
+ }
+.textolibro{
+    width: 74%;
+    display: inline-block;
+    vertical-align: top;
+    
+}
+.textolibro ul{
+    list-style: none;
+   
+}
+.textolibro li{
+    width: 32%;
+    display: inline-block;
+    vertical-align: top;
+}
+p{
+    padding: 0.5em 0;
+}
+@media print{
+    body{
+        background-color: white;
+        
+    }
+    h1, h2{
+        color: black;
+    }
+    
+}
+@media (max-width:470px){
+    .container{
+        font-size:.9em;
+    width: 90%;
+    
+    
+    
+}
+    .datoslibro{
+    width: 100%;
+   
+    display: block;
+        
+ }
+.textolibro{
+  width: 100%;
+   
+    display: block;
+    
+}
+    .textolibro li{
+    width: 100%;
+    display: block!important;
+    
+}        
+    
+}
